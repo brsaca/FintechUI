@@ -15,7 +15,7 @@ struct ContentView: View {
                 NavBar
                 
                 // My Cards
-                
+                MyCards
                 
                 // Actions
                 
@@ -38,7 +38,21 @@ extension ContentView {
             
             Spacer()
             
-            NavBarButton(image: "ellipsis", action: {})
+            ButtonWithIcon(type: .square, image: "ellipsis", action: {})
+        }
+    }
+    
+    var MyCards: some View {
+        VStack(alignment: .leading) {
+            Text("My cards")
+                .font(.system(size: 50))
+                .fontWeight(.regular)
+                .foregroundStyle(.white)
+            
+            ScrollView(.horizontal) {
+                ButtonWithIcon(type: .large, image: "plus", action: {})
+
+            }
         }
     }
 }
