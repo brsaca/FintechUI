@@ -38,7 +38,7 @@ extension ContentView {
             
             Spacer()
             
-            
+            NavBarButton(image: "ellipsis", action: {})
         }
     }
 }

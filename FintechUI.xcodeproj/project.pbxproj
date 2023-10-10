@@ -14,6 +14,7 @@
 		4B79DD422AD5DC90004A9971 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B79DD412AD5DC90004A9971 /* Color.swift */; };
 		4B79DD452AD5DFA5004A9971 /* UserPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B79DD442AD5DFA5004A9971 /* UserPicture.swift */; };
 		4B79DD472AD5DFB4004A9971 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B79DD462AD5DFB4004A9971 /* User.swift */; };
+		4B79DD492AD5E3E5004A9971 /* NavBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B79DD482AD5E3E5004A9971 /* NavBarButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		4B79DD412AD5DC90004A9971 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		4B79DD442AD5DFA5004A9971 /* UserPicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPicture.swift; sourceTree = "<group>"; };
 		4B79DD462AD5DFB4004A9971 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4B79DD482AD5E3E5004A9971 /* NavBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 		4B79DD432AD5DF7C004A9971 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4B79DD482AD5E3E5004A9971 /* NavBarButton.swift */,
 				4B79DD442AD5DFA5004A9971 /* UserPicture.swift */,
 			);
 			path = Components;
@@ -220,6 +223,7 @@
 			files = (
 				4B79DD2E2AD5D5CA004A9971 /* ContentView.swift in Sources */,
 				4B79DD2C2AD5D5CA004A9971 /* FintechUIApp.swift in Sources */,
+				4B79DD492AD5E3E5004A9971 /* NavBarButton.swift in Sources */,
 				4B79DD422AD5DC90004A9971 /* Color.swift in Sources */,
 				4B79DD472AD5DFB4004A9971 /* User.swift in Sources */,
 				4B79DD452AD5DFA5004A9971 /* UserPicture.swift in Sources */,
