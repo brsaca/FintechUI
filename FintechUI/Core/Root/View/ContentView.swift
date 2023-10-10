@@ -9,16 +9,41 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ScrollView(.vertical) {
+            VStack {
+                // NavBar
+                NavBar
+                
+                // My Cards
+                
+                
+                // Actions
+                
+                // Chips
+                
+                // Contacts
+                
+                Spacer()
+            }
+            .padding()
         }
-        .padding()
+        .background(.black)
     }
 }
 
+extension ContentView {
+    var NavBar: some View {
+        HStack {
+            UserPicture(user: .myUser, kind: .rectangular)
+            
+            Spacer()
+            
+            
+        }
+    }
+}
+
+// MARK: - Previews
 #Preview {
     ContentView()
 }
