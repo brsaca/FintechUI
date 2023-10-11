@@ -11,7 +11,7 @@ import Charts
 struct BalanceView: View {
     // MARK: View Properties
     let card: Card
-    
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         ScrollView(.vertical) {
@@ -43,7 +43,9 @@ struct BalanceView: View {
 extension BalanceView {
     var NavBar: some View {
         HStack {
-            ButtonWithIcon(type: .square, image: "arrow.backward", action: {})
+            ButtonWithIcon(type: .square, image: "arrow.backward", action: {
+                dismiss()
+            })
             
             Spacer()
             

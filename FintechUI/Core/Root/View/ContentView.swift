@@ -9,28 +9,31 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ScrollView(.vertical) {
-            VStack(spacing: 26) {
-                // NavBar
-                NavBar
-                
-                // My Cards
-                MyCards
-                
-                // Actions
-                Actions
-                
-                // Chips
-                Chips
-                
-                // Contacts
-                MyContacts
-                
-                Spacer()
+        NavigationView {
+            ScrollView(.vertical) {
+                VStack(spacing: 26) {
+                    // NavBar
+                    NavBar
+                    
+                    // My Cards
+                    MyCards
+                    
+                    // Actions
+                    Actions
+                    
+                    // Chips
+                    Chips
+                    
+                    // Contacts
+                    MyContacts
+                    
+                    Spacer()
+                }
+                .padding()
             }
-            .padding()
+            .background(.black)
         }
-        .background(.black)
+        .navigationBarBackButtonHidden(true)
     }
 }
 
@@ -58,7 +61,11 @@ extension ContentView {
                     ScrollView(.horizontal, showsIndicators: false) {
                         LazyHStack {
                             ForEach(myCards) { card in
-                                CardView(card: card)
+                                NavigationLink{ BalanceView(card: card)
+                                        .navigationBarBackButtonHidden(true)
+                                } label: {
+                                    CardView(card: card)
+                                }
                             }
                         }
                     }
