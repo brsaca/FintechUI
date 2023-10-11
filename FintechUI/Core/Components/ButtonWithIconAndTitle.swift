@@ -7,7 +7,17 @@
 
 import SwiftUI
 
-
+/// Button with icon from symbol, title and action
+///
+/// How to use it.
+/// ```
+/// ButtonWithIconAndTitle(image: "creditcard", title: "Send", action: {})
+/// ```
+/// - Parameter
+///   - image: symbol name
+///   - title: String
+///   - action: call
+///
 struct ButtonWithIconAndTitle: View {
     // MARK: View Properties
     let image: String
