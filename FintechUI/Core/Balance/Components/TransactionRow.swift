@@ -13,17 +13,7 @@ struct TransactionRow: View {
     
     var body: some View {
         HStack {
-            ZStack {
-                Circle()
-                    .fill(Color.cGray)
-                    .frame(width: 60, height: 60)
-                
-                Image(systemName: transaction.operation.image)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 25, height: 20)
-                    .foregroundColor(Color.cYellow)
-            }
+            CircularIcon(image: transaction.operation.image, presentation: .transaction)
             
             VStack(alignment: .leading) {
                 Text(transaction.user.name)
