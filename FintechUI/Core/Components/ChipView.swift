@@ -21,7 +21,13 @@ struct ChipView: View {
     // MARK: View Properties
     let title: String
     let action: () -> Void
-    @State private var isSelected = false
+    @State private var isSelected: Bool
+    
+    init(title: String, action: @escaping () -> Void, isPreselected: Bool) {
+        self.title = title
+        self.action = action
+        self._isSelected = State(initialValue: isPreselected)
+    }
     
     var body: some View {
         Text(title)
@@ -48,5 +54,5 @@ struct ChipView: View {
 
 // MARK: - Previews
 #Preview {
-    ChipView(title: "Sale", action:{})
+    ChipView(title: "Sale", action:{}, isPreselected: true)
 }

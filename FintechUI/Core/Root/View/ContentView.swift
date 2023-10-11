@@ -86,10 +86,10 @@ extension ContentView {
     
     var Chips: some View {
         HStack {
-            ChipView(title: "Activity", action: {})
-            ChipView(title: "Contacts", action: {})
-            ChipView(title: "Payments", action: {})
-            ChipView(title: "Sale", action: {})
+            ChipView(title: "Activity", action: {}, isPreselected: false)
+            ChipView(title: "Contacts", action: {}, isPreselected: true)
+            ChipView(title: "Payments", action: {}, isPreselected: false)
+            ChipView(title: "Sale", action: {}, isPreselected: false)
         }
     }
     
