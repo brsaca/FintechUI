@@ -11,6 +11,13 @@ import SwiftUI
 enum kindPicture {
     case rectangular
     case circular
+    
+    var imageSize: CGSize {
+        switch self {
+        case .rectangular: return CGSizeMake(60, 60)
+        case .circular: return CGSizeMake(50, 50)
+        }
+    }
 }
 
 /// User picture with two kinds circle or rectangular
@@ -44,7 +51,7 @@ extension UserPicture {
         Image(user.image)
             .resizable()
             .aspectRatio(contentMode: .fill)
-            .frame(width: 50, height: 50)
+            .frame(width: kind.imageSize.width, height: kind.imageSize.height)
     }
 }
 
