@@ -18,6 +18,7 @@
 		4B79DD4B2AD61672004A9971 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B79DD4A2AD61672004A9971 /* Card.swift */; };
 		4B79DD4E2AD61860004A9971 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B79DD4D2AD61860004A9971 /* CardView.swift */; };
 		4B79DD502AD61BDC004A9971 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B79DD4F2AD61BDC004A9971 /* Double.swift */; };
+		4B79DD522AD620A0004A9971 /* ButtonWithIconAndTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B79DD512AD620A0004A9971 /* ButtonWithIconAndTitle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		4B79DD4A2AD61672004A9971 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		4B79DD4D2AD61860004A9971 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		4B79DD4F2AD61BDC004A9971 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		4B79DD512AD620A0004A9971 /* ButtonWithIconAndTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithIconAndTitle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				4B79DD482AD5E3E5004A9971 /* ButtonWithIcon.swift */,
+				4B79DD512AD620A0004A9971 /* ButtonWithIconAndTitle.swift */,
 				4B79DD442AD5DFA5004A9971 /* UserPicture.swift */,
 			);
 			path = Components;
@@ -239,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B79DD2E2AD5D5CA004A9971 /* ContentView.swift in Sources */,
+				4B79DD522AD620A0004A9971 /* ButtonWithIconAndTitle.swift in Sources */,
 				4B79DD2C2AD5D5CA004A9971 /* FintechUIApp.swift in Sources */,
 				4B79DD4B2AD61672004A9971 /* Card.swift in Sources */,
 				4B79DD492AD5E3E5004A9971 /* ButtonWithIcon.swift in Sources */,

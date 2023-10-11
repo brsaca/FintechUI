@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ScrollView(.vertical) {
-            VStack {
+            VStack(spacing: 26) {
                 // NavBar
                 NavBar
                 
@@ -18,6 +18,7 @@ struct ContentView: View {
                 MyCards
                 
                 // Actions
+                Actions
                 
                 // Chips
                 
@@ -43,7 +44,7 @@ extension ContentView {
     }
     
     var MyCards: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 26) {
             Text("My cards")
                 .font(.system(size: 50))
                 .fontWeight(.regular)
@@ -61,6 +62,17 @@ extension ContentView {
             }
         }
     }
+    
+    var Actions: some View {
+        HStack {
+            ButtonWithIconAndTitle(image: "creditcard", title: "Send", action: {})
+            
+            ButtonWithIconAndTitle(image: "creditcard", title: "Receive", action: {})
+            
+            ButtonWithIconAndTitle(image: "dollarsign.arrow.circlepath", title: "Swap", action: {})
+        }
+    }
+    
 }
 
 // MARK: - Previews
