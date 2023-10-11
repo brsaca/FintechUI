@@ -21,6 +21,7 @@ struct ContentView: View {
                 Actions
                 
                 // Chips
+                Chips
                 
                 // Contacts
                 
@@ -70,6 +71,15 @@ extension ContentView {
             ButtonWithIconAndTitle(image: "creditcard", title: "Receive", action: {})
             
             ButtonWithIconAndTitle(image: "dollarsign.arrow.circlepath", title: "Swap", action: {})
+        }
+    }
+    
+    var Chips: some View {
+        HStack {
+            ChipView(title: "Activity", action: {})
+            ChipView(title: "Contacts", action: {})
+            ChipView(title: "Payments", action: {})
+            ChipView(title: "Sale", action: {})
         }
     }
     
