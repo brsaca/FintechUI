@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Captura de pantalla 2023-10-10 a la(s) 5.38.59 p.m..png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

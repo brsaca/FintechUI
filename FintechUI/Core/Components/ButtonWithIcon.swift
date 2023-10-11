@@ -28,7 +28,7 @@ enum TypeButton {
     var iconSize: CGSize {
         switch self {
         case .square: return CGSizeMake(30, 30)
-        case .large: return CGSizeMake(20, 20)
+        case .large: return CGSizeMake(14, 14)
         }
     }
     
@@ -42,7 +42,7 @@ enum TypeButton {
     var buttonSize: CGSize {
         switch self {
         case .square: return CGSizeMake(60, 60)
-        case .large: return CGSizeMake(100, 200)
+        case .large: return CGSizeMake(80, 140)
         }
     }
 }
