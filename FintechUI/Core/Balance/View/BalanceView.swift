@@ -22,6 +22,9 @@ struct BalanceView: View {
                 // Total Balance
                 TotalBalance
                 
+                // Months Filter
+                MonthsFilter
+                
                 // Chart
                 CustomChart
                     .padding(.vertical, 40)
@@ -57,6 +60,22 @@ extension BalanceView {
             Text("$\(card.amount.formatToString())")
                 .font(.system(size: 54))
                 .fontWeight(.medium)
+                .foregroundStyle(.white)
+        }
+    }
+    
+    var MonthsFilter: some View {
+        HStack(spacing: 30) {
+            Text("Day")
+                .foregroundStyle(Color.cGreen)
+            
+            Text("Week")
+                .foregroundStyle(.white)
+            
+            Text("Month")
+                .foregroundStyle(.white)
+            
+            Text("Year")
                 .foregroundStyle(.white)
         }
     }
