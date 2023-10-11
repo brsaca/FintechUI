@@ -23,6 +23,9 @@
 		4B87AA9A2AD718E90084DB96 /* ContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B87AA992AD718E90084DB96 /* ContactRow.swift */; };
 		4B87AA9D2AD729340084DB96 /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B87AA9C2AD729340084DB96 /* BalanceView.swift */; };
 		4B87AA9F2AD730530084DB96 /* ChartValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B87AA9E2AD730530084DB96 /* ChartValue.swift */; };
+		4B87AAA22AD733550084DB96 /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B87AAA12AD733550084DB96 /* TransactionRow.swift */; };
+		4B87AAA42AD733910084DB96 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B87AAA32AD733910084DB96 /* Transaction.swift */; };
+		4B87AAAB2AD73B100084DB96 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B87AAAA2AD73B100084DB96 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,9 @@
 		4B87AA992AD718E90084DB96 /* ContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRow.swift; sourceTree = "<group>"; };
 		4B87AA9C2AD729340084DB96 /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
 		4B87AA9E2AD730530084DB96 /* ChartValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartValue.swift; sourceTree = "<group>"; };
+		4B87AAA12AD733550084DB96 /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
+		4B87AAA32AD733910084DB96 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		4B87AAAA2AD73B100084DB96 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,7 @@
 				4B79DD3A2AD5DB56004A9971 /* Core */,
 				4B79DD3B2AD5DB5B004A9971 /* Extension */,
 				4B79DD3C2AD5DB64004A9971 /* Model */,
+				4B87AAA92AD73AFF0084DB96 /* Utils */,
 				4B79DD312AD5D5CD004A9971 /* Preview Content */,
 			);
 			path = FintechUI;
@@ -125,8 +132,9 @@
 			isa = PBXGroup;
 			children = (
 				4B79DD4A2AD61672004A9971 /* Card.swift */,
-				4B79DD462AD5DFB4004A9971 /* User.swift */,
 				4B87AA9E2AD730530084DB96 /* ChartValue.swift */,
+				4B87AAA32AD733910084DB96 /* Transaction.swift */,
+				4B79DD462AD5DFB4004A9971 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -143,6 +151,7 @@
 		4B79DD3E2AD5DB9C004A9971 /* Balance */ = {
 			isa = PBXGroup;
 			children = (
+				4B87AAA02AD733450084DB96 /* Components */,
 				4B87AA9B2AD729270084DB96 /* View */,
 			);
 			path = Balance;
@@ -189,6 +198,22 @@
 				4B87AA9C2AD729340084DB96 /* BalanceView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		4B87AAA02AD733450084DB96 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4B87AAA12AD733550084DB96 /* TransactionRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4B87AAA92AD73AFF0084DB96 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4B87AAAA2AD73B100084DB96 /* Utils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B87AAA22AD733550084DB96 /* TransactionRow.swift in Sources */,
 				4B79DD2E2AD5D5CA004A9971 /* ContentView.swift in Sources */,
+				4B87AAA42AD733910084DB96 /* Transaction.swift in Sources */,
 				4B79DD522AD620A0004A9971 /* ButtonWithIconAndTitle.swift in Sources */,
 				4B79DD2C2AD5D5CA004A9971 /* FintechUIApp.swift in Sources */,
 				4B79DD4B2AD61672004A9971 /* Card.swift in Sources */,
@@ -274,6 +301,7 @@
 				4B79DD452AD5DFA5004A9971 /* UserPicture.swift in Sources */,
 				4B79DD542AD62FE1004A9971 /* ChipView.swift in Sources */,
 				4B87AA9A2AD718E90084DB96 /* ContactRow.swift in Sources */,
+				4B87AAAB2AD73B100084DB96 /* Utils.swift in Sources */,
 				4B87AA9D2AD729340084DB96 /* BalanceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

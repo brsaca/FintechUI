@@ -24,9 +24,10 @@ struct BalanceView: View {
                 
                 // Chart
                 CustomChart
+                    .padding(.vertical, 40)
                 
                 // Transactions
-               // Transactions
+                Transactions
                 
                 Spacer()
             }
@@ -77,9 +78,44 @@ extension BalanceView {
         }
     }
     
-    /*var Transactions: some View {
-        
-    } */
+    var Transactions: some View {
+        VStack(spacing: 6) {            RoundedRectangle(cornerRadius: 4)
+                .frame(width: 80, height: 6, alignment: .center)
+                .padding(.bottom, 10)
+                .foregroundColor(.gray.opacity(0.5))
+            
+            HStack {
+                Text("Transactions")
+                    .font(.system(size: 24))
+                    .fontWeight(.semibold)
+                    .foregroundStyle(.black)
+                
+                Spacer()
+                
+                Text("See All")
+                    .font(.system(size: 18))
+                    .fontWeight(.light)
+                    .foregroundStyle(.gray)
+            }
+            .foregroundStyle(.white)
+            .padding(.horizontal)
+            
+            Spacer()
+            
+            if let transactions = User.myUser.transactions {
+                LazyVStack {
+                    ForEach(transactions) { transaction in
+                        TransactionRow(transaction: transaction)
+                    }
+                }
+            }
+        }
+        .padding()
+        .background(
+            RoundedRectangle(cornerRadius: 30)
+                .fill(Color.cYellow)
+        )
+    }
 }
 
 // MARK: - Previews

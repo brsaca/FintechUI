@@ -69,9 +69,9 @@ extension ContentView {
     
     var Actions: some View {
         HStack {
-            ButtonWithIconAndTitle(image: "creditcard", title: "Send", action: {})
+            ButtonWithIconAndTitle(image: Operation.send.image, title: Operation.send.rawValue.capitalized, action: {})
             
-            ButtonWithIconAndTitle(image: "creditcard", title: "Receive", action: {})
+            ButtonWithIconAndTitle(image: Operation.receive.image, title: Operation.receive.rawValue.capitalized, action: {})
             
             ButtonWithIconAndTitle(image: "dollarsign.arrow.circlepath", title: "Swap", action: {})
         }
