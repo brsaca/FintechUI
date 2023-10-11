@@ -15,6 +15,9 @@
 		4B79DD452AD5DFA5004A9971 /* UserPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B79DD442AD5DFA5004A9971 /* UserPicture.swift */; };
 		4B79DD472AD5DFB4004A9971 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B79DD462AD5DFB4004A9971 /* User.swift */; };
 		4B79DD492AD5E3E5004A9971 /* ButtonWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B79DD482AD5E3E5004A9971 /* ButtonWithIcon.swift */; };
+		4B79DD4B2AD61672004A9971 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B79DD4A2AD61672004A9971 /* Card.swift */; };
+		4B79DD4E2AD61860004A9971 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B79DD4D2AD61860004A9971 /* CardView.swift */; };
+		4B79DD502AD61BDC004A9971 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B79DD4F2AD61BDC004A9971 /* Double.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		4B79DD442AD5DFA5004A9971 /* UserPicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPicture.swift; sourceTree = "<group>"; };
 		4B79DD462AD5DFB4004A9971 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4B79DD482AD5E3E5004A9971 /* ButtonWithIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithIcon.swift; sourceTree = "<group>"; };
+		4B79DD4A2AD61672004A9971 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		4B79DD4D2AD61860004A9971 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		4B79DD4F2AD61BDC004A9971 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				4B79DD412AD5DC90004A9971 /* Color.swift */,
+				4B79DD4F2AD61BDC004A9971 /* Double.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -107,6 +114,7 @@
 		4B79DD3C2AD5DB64004A9971 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4B79DD4A2AD61672004A9971 /* Card.swift */,
 				4B79DD462AD5DFB4004A9971 /* User.swift */,
 			);
 			path = Model;
@@ -115,6 +123,7 @@
 		4B79DD3D2AD5DB95004A9971 /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				4B79DD4C2AD6184D004A9971 /* Components */,
 				4B79DD402AD5DBB2004A9971 /* View */,
 			);
 			path = Root;
@@ -147,6 +156,14 @@
 			children = (
 				4B79DD482AD5E3E5004A9971 /* ButtonWithIcon.swift */,
 				4B79DD442AD5DFA5004A9971 /* UserPicture.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4B79DD4C2AD6184D004A9971 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4B79DD4D2AD61860004A9971 /* CardView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -223,9 +240,12 @@
 			files = (
 				4B79DD2E2AD5D5CA004A9971 /* ContentView.swift in Sources */,
 				4B79DD2C2AD5D5CA004A9971 /* FintechUIApp.swift in Sources */,
+				4B79DD4B2AD61672004A9971 /* Card.swift in Sources */,
 				4B79DD492AD5E3E5004A9971 /* ButtonWithIcon.swift in Sources */,
 				4B79DD422AD5DC90004A9971 /* Color.swift in Sources */,
 				4B79DD472AD5DFB4004A9971 /* User.swift in Sources */,
+				4B79DD4E2AD61860004A9971 /* CardView.swift in Sources */,
+				4B79DD502AD61BDC004A9971 /* Double.swift in Sources */,
 				4B79DD452AD5DFA5004A9971 /* UserPicture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

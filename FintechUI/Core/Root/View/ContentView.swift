@@ -49,9 +49,15 @@ extension ContentView {
                 .fontWeight(.regular)
                 .foregroundStyle(.white)
             
-            ScrollView(.horizontal) {
+            HStack {
                 ButtonWithIcon(type: .large, image: "plus", action: {})
-
+                ScrollView(.horizontal, showsIndicators: false) {
+                    LazyHStack {
+                        ForEach(Card.MOCK_CARDS) { card in
+                            CardView(card: card)
+                        }
+                    }
+                }
             }
         }
     }
