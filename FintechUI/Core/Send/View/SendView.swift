@@ -18,7 +18,7 @@ struct SendView: View {
             NavBar
             
             // Contact
-            
+            ContactInfo
             
             // Amount
             
@@ -56,10 +56,23 @@ extension SendView {
     }
     
     var ContactInfo: some View {
-        VStack {
+        VStack(alignment: .center, spacing: 20){
             ZStack {
                 UserPicture(user: contact, kind: .circular)
                 
+                CircularIcon(image: Operation.send.image, presentation: .send)
+                    .offset(x: 26)
+            }
+            
+            Text(contact.name)
+                .font(.title2)
+                .foregroundStyle(.white)
+            
+            if let card = contact.cards?[0] {
+                Text(card.last4DigitsTxt)
+                    .font(.callout)
+                    .foregroundStyle(.gray)
+                    .padding(.top, -10)
             }
         }
     }
