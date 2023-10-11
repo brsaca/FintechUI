@@ -37,11 +37,20 @@ struct Card: Identifiable {
     var amountInDecimals: Int {
         return amount.separateAmount().decimals
     }
+    
+    var last4DigitsTxt: String {
+        return "**** \(last4Digits)"
+    }
 }
 
 extension Card {
     static let MOCK_CARDS: [Card] = [
         Card(last4Digits: "4934", image: "mc", amount: 13397.23),
         Card(last4Digits: "9876", image: "visa", amount: 27987.70),
+        Card(last4Digits: "1234", image: "mc", amount: 13397.23),
+        Card(last4Digits: "5322", image: "visa", amount: 27987.70),
+        Card(last4Digits: "2455", image: "mc", amount: 13397.23),
+        Card(last4Digits: "1256", image: "visa", amount: 27987.70),
+        Card(last4Digits: "2345", image: "visa", amount: 27987.70),
     ]
 }

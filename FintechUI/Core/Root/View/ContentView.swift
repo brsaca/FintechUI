@@ -24,6 +24,7 @@ struct ContentView: View {
                 Chips
                 
                 // Contacts
+                MyContacts
                 
                 Spacer()
             }
@@ -53,10 +54,12 @@ extension ContentView {
             
             HStack {
                 ButtonWithIcon(type: .large, image: "plus", action: {})
-                ScrollView(.horizontal, showsIndicators: false) {
-                    LazyHStack {
-                        ForEach(Card.MOCK_CARDS) { card in
-                            CardView(card: card)
+                if let myCards = User.myUser.cards {
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        LazyHStack {
+                            ForEach(myCards) { card in
+                                CardView(card: card)
+                            }
                         }
                     }
                 }
@@ -83,6 +86,35 @@ extension ContentView {
         }
     }
     
+    var MyContacts: some View {
+        VStack(spacing: 6) {
+            HStack {
+                Text("My contacts")
+                    .font(.system(size: 24))
+                
+                Spacer()
+                
+                Image(systemName: "magnifyingglass")
+                    .resizable()
+                    .frame(width: 20, height: 20)
+            }
+            .foregroundStyle(.white)
+            .padding(.horizontal)
+            
+            Spacer()
+            
+            LazyVStack {
+                ForEach(User.MOCK_USERS) { user in
+                    ContactRow(contact: user)
+                }
+            }
+        }
+        .padding()
+        .background(
+            RoundedRectangle(cornerRadius: 30)
+                .fill(Color.cGray)
+        )
+    }
 }
 
 // MARK: - Previews

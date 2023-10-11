@@ -30,7 +30,7 @@ struct CardView: View {
                 
                 Spacer()
                 
-                Text("**** \(card.last4Digits)")
+                Text(card.last4DigitsTxt)
                     .font(.title2)
                     .fontWeight(.light)
                     .foregroundStyle(.gray)
