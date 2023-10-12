@@ -39,7 +39,6 @@ struct DialPad: View {
         .background(Color.cGray.opacity(0.9))
         .cornerRadius(20)
         .onTapGesture {
-            print("init currentAmount:: \(currentAmount)")
             if currentAmount.isEmpty {
                 if pad != .minus && pad != .dot && pad != .n0 {
                     currentAmount.append(pad.rawValue)
@@ -53,8 +52,6 @@ struct DialPad: View {
                     currentAmount.append(".")
                 }
             }
-            
-            print("final currentAmount:: \(currentAmount)")
         }
     }
 }
