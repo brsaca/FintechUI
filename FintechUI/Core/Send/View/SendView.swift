@@ -11,6 +11,20 @@ struct SendView: View {
     // MARK: View Properties
     let contact: User
     @Environment(\.dismiss) var dismiss
+    @State var currentAmount:String = String()
+    
+    var formattedAmount: String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.currencySymbol = "$"
+        formatter.maximumFractionDigits = 2
+        
+        if let number = Double(currentAmount) {
+            return formatter.string(from: NSNumber(value: number)) ?? "$0.00"
+        }
+        
+        return "$0.00"
+    }
     
     var body: some View {
         VStack(spacing: 26) {
@@ -21,9 +35,16 @@ struct SendView: View {
             ContactInfo
             
             // Amount
-            
+            TextField("$0.00", text: .constant(formattedAmount))
+                .font(.system(size: 60))
+                .foregroundColor(.white)
+                .font(.headline)
+                .multilineTextAlignment(.center)
+                .disabled(true)
+                .padding()
             
             // Pad
+            NumberPad
             
             Spacer()
             // Button
@@ -51,7 +72,7 @@ extension SendView {
             
             Spacer()
             
-            ButtonWithIcon(type: .square, image: "ellipsis", action: {})
+            ButtonWithIcon(type: .square, image: "bubble.left.and.text.bubble.right", action: {})
         }
     }
     
@@ -73,6 +94,14 @@ extension SendView {
                     .font(.callout)
                     .foregroundStyle(.gray)
                     .padding(.top, -10)
+            }
+        }
+    }
+    
+    var NumberPad: some View {
+        LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 3), spacing: 10) {
+            ForEach(Pads.allCases, id: \.self) { pad in
+                DialPad(pad: pad, currentAmount: $currentAmount)
             }
         }
     }
