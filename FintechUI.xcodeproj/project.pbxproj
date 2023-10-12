@@ -190,8 +190,8 @@
 				4B79DD482AD5E3E5004A9971 /* ButtonWithIcon.swift */,
 				4B79DD512AD620A0004A9971 /* ButtonWithIconAndTitle.swift */,
 				4B79DD532AD62FE1004A9971 /* ChipView.swift */,
-				4B79DD442AD5DFA5004A9971 /* UserPicture.swift */,
 				4B801A642AD75FCA0020038F /* CircularIcon.swift */,
+				4B79DD442AD5DFA5004A9971 /* UserPicture.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -199,8 +199,8 @@
 		4B79DD4C2AD6184D004A9971 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				4B87AA992AD718E90084DB96 /* ContactRow.swift */,
 				4B79DD4D2AD61860004A9971 /* CardView.swift */,
+				4B87AA992AD718E90084DB96 /* ContactRow.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";

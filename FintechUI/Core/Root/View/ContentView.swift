@@ -61,7 +61,8 @@ extension ContentView {
                     ScrollView(.horizontal, showsIndicators: false) {
                         LazyHStack {
                             ForEach(myCards) { card in
-                                NavigationLink{ BalanceView(card: card)
+                                NavigationLink{ 
+                                    BalanceView(card: card)
                                         .navigationBarBackButtonHidden(true)
                                 } label: {
                                     CardView(card: card)
@@ -112,7 +113,12 @@ extension ContentView {
             
             LazyVStack {
                 ForEach(User.MOCK_USERS) { user in
-                    ContactRow(contact: user)
+                    NavigationLink{ 
+                        SendView(contact: user)
+                            .navigationBarBackButtonHidden(true)
+                    } label: {
+                        ContactRow(contact: user)
+                    }
                 }
             }
         }
