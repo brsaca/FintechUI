@@ -2,8 +2,8 @@ Fintech mobile app - UI design 👋
 
 Design App on SwiftUI from Dribbble [Fintech mobile app]([https://dribbble.com/shots/20954526-Habit-tracker-app](https://dribbble.com/shots/22589511-Fintech-mobile-app?utm_source=Clipboard_Shot&utm_campaign=anastasia-tino&utm_content=Fintech%20mobile%20app&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=anastasia-tino&utm_content=Fintech%20mobile%20app&utm_medium=Social_Share))
 <p align="center">
-<a href="#"><!--
-<img src="images/" align="center" width=50%> -->
+<a href="#">
+<img src="images/fintechUI.gif" align="center" width=50%> 
 </a> 
 <br><br>
      Fintech mobile app design with SwiftUI
