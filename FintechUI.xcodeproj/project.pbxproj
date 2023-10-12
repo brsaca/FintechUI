@@ -23,6 +23,8 @@
 		4B801A632AD75E700020038F /* SendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B801A622AD75E700020038F /* SendView.swift */; };
 		4B801A652AD75FCA0020038F /* CircularIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B801A642AD75FCA0020038F /* CircularIcon.swift */; };
 		4B801A6A2AD76B330020038F /* DialPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B801A692AD76B330020038F /* DialPad.swift */; };
+		4B801A6C2AD7760C0020038F /* TextForButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B801A6B2AD7760C0020038F /* TextForButtonModifier.swift */; };
+		4B801A6E2AD7767F0020038F /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B801A6D2AD7767F0020038F /* TextFieldModifier.swift */; };
 		4B87AA9A2AD718E90084DB96 /* ContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B87AA992AD718E90084DB96 /* ContactRow.swift */; };
 		4B87AA9D2AD729340084DB96 /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B87AA9C2AD729340084DB96 /* BalanceView.swift */; };
 		4B87AA9F2AD730530084DB96 /* ChartValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B87AA9E2AD730530084DB96 /* ChartValue.swift */; };
@@ -49,6 +51,8 @@
 		4B801A622AD75E700020038F /* SendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendView.swift; sourceTree = "<group>"; };
 		4B801A642AD75FCA0020038F /* CircularIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularIcon.swift; sourceTree = "<group>"; };
 		4B801A692AD76B330020038F /* DialPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialPad.swift; sourceTree = "<group>"; };
+		4B801A6B2AD7760C0020038F /* TextForButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextForButtonModifier.swift; sourceTree = "<group>"; };
+		4B801A6D2AD7767F0020038F /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
 		4B87AA992AD718E90084DB96 /* ContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRow.swift; sourceTree = "<group>"; };
 		4B87AA9C2AD729340084DB96 /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
 		4B87AA9E2AD730530084DB96 /* ChartValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartValue.swift; sourceTree = "<group>"; };
@@ -213,6 +217,8 @@
 			isa = PBXGroup;
 			children = (
 				4B801A692AD76B330020038F /* DialPad.swift */,
+				4B801A6D2AD7767F0020038F /* TextFieldModifier.swift */,
+				4B801A6B2AD7760C0020038F /* TextForButtonModifier.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -322,6 +328,7 @@
 				4B79DD492AD5E3E5004A9971 /* ButtonWithIcon.swift in Sources */,
 				4B79DD422AD5DC90004A9971 /* Color.swift in Sources */,
 				4B79DD472AD5DFB4004A9971 /* User.swift in Sources */,
+				4B801A6C2AD7760C0020038F /* TextForButtonModifier.swift in Sources */,
 				4B79DD4E2AD61860004A9971 /* CardView.swift in Sources */,
 				4B79DD502AD61BDC004A9971 /* Double.swift in Sources */,
 				4B79DD452AD5DFA5004A9971 /* UserPicture.swift in Sources */,
@@ -330,6 +337,7 @@
 				4B87AAAB2AD73B100084DB96 /* Utils.swift in Sources */,
 				4B87AA9D2AD729340084DB96 /* BalanceView.swift in Sources */,
 				4B801A652AD75FCA0020038F /* CircularIcon.swift in Sources */,
+				4B801A6E2AD7767F0020038F /* TextFieldModifier.swift in Sources */,
 				4B801A6A2AD76B330020038F /* DialPad.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

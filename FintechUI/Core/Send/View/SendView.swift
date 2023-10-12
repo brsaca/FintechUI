@@ -27,7 +27,7 @@ struct SendView: View {
     }
     
     var body: some View {
-        VStack(spacing: 26) {
+        VStack(spacing: 10) {
             // NavBar
             NavBar
             
@@ -36,11 +36,7 @@ struct SendView: View {
             
             // Amount
             TextField("$0.00", text: .constant(formattedAmount))
-                .font(.system(size: 60))
-                .foregroundColor(.white)
-                .font(.headline)
-                .multilineTextAlignment(.center)
-                .disabled(true)
+                .modifier(TextFieldModifier())
                 .padding()
             
             // Pad
@@ -48,8 +44,8 @@ struct SendView: View {
             
             Spacer()
             // Button
-            
-            
+            Text("Send")
+                .modifier(TextForButtonModifier())
         }
         .padding()
         .background(.black)
